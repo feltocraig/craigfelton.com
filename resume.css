@@ -74,4 +74,19 @@ a#pdf:hover { background: #222; }
 
 .yui-t7 #yui-main .yui-b {margin: 0;}
 
+.print-only{
+  display: none;
+}
+
+@media print {
+  .no-print 
+  {
+    display: none;
+  }
+
+  .print-only
+  { 
+    display: block;
+  }
+}
 
