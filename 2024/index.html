@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .favorite-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .item-location {
+            color: #666;
+            font-style: italic;
+        }
+        .item-description {
+            display: block;
+            margin-top: 0.5rem;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        .image-toggle {
+            display: block;
+            background: #e0e0e0;
+            border: none;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 0.5rem;
+        }
+        .image-toggle:hover {
+            background: #d0d0d0;
+        }
+        .hidden-image {
+            display: none;
+            max-width: 100%;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+        .hidden-image.show {
+            display: block;
+        }
+        .spotify-embed {
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .intro-section {
+            margin: 2rem 0 3rem;
+            padding: 1.5rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        .intro-section p {
+            margin: 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Things of 2024</h1>
+    <div class="intro-section">
+        <p>
+            Welcome to my curated collection of discoveries and experiences from 2024. While not everything featured here was 
+            created or opened this year, each entry represents something I personally experienced for the first time in 2024. 
+            From remarkable restaurants and memorable dishes to captivating music and innovative products, these are the 
+            highlights that made my year special.
+        </p>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Restaurants Visited</h2>
+        <div class="favorite-item">
+            <span class="item-title">COTE Korean Steakhouse</span>
+            <span class="item-location">• Miami, Florida</span>
+            <span class="item-description">
+                A Miami outpost of the Michelin-starred New York City favorite, COTE combines the precision of a high-end steakhouse with the interactive flair of Korean BBQ. 
+                The tasting menu left such an impression that my girlfriend and I haven't stopped raving about it since our visit.            
+            </span>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Lom Wong</span>
+            <span class="item-location">• Phoenix, Arizona</span>
+            <span class="item-description">
+                An authentically regional Thai restaurant in Phoenix that ventures far beyond familiar dishes. 
+                With a menu showcasing hyper-local Thai specialties rarely found in the U.S., surrendering to the chef's recommendations leads to an eye-opening culinary adventure.
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Food Ate</h2>
+        <div class="favorite-item">
+            <span class="item-title">Trattoria Sostanza's Meringue cake</span>
+            <span class="item-location">• Florence, Italy</span>
+            <button class="image-toggle" onclick="toggleImage('meringue-image')">Show Image</button>
+            <img id="meringue-image" class="hidden-image" src="img/cake.jpg" alt="Meringue cake from Trattoria Sostanza">
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Black Cod Miso</span>
+            <span class="item-description">
+                Made this incredible Nobu adaptation dish at home following this recipe. 
+                The 2-day miso marinade transforms the black cod into a buttery, melt-in-your-mouth experience.
+                <br>
+                <a href="https://www.justonecookbook.com/black-cod-with-miso/" target="_blank">Recipe Link</a>
+            </span>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Velvet Belly's Beef Tartare</span>
+            <span class="item-location">• Rochester, New York</span>
+            <span class="item-description">
+                Expertly crafted bite-sized beef tartare served atop crispy potato galettes, elevated with truffle, parmesan, and chives. 
+                This masterfully composed dish delivers such an intense moment of pleasure that the first bite triggers an involuntary smile and eye roll – a true testament to its perfection.
+            </span>
+        </div>
+    </div>
+
+    <div class="category"></div>
+        <h2>Favorite Cocktail Bars</h2>
+        <div class="favorite-item">
+            <span class="item-title">Carry On</span>
+            <span class="item-location">• Phoenix, Arizona</span>
+            <span class="item-description">
+                A very newly opened Phoenix cocktail bar that transports you to a 1960s airliner, complete with flight attendant service, window-view screens, and rumbling chairs. 
+                From the welcome drink to the signature martini hour, this immersive aviation-themed experience makes you feel like you're truly flying while enjoying craft cocktails.
+            </span>
+        </div>   
+        <div class="favorite-item">
+            <span class="item-title">Locale Firenze</span>
+            <span class="item-location">• Florence, Italy</span>
+            <span class="item-description">
+                Locale Firenze stands among the world's top 50 cocktail bars, offering an enchanting blend of hospitality and ambiance. 
+                From the moment guests arrive, they're welcomed with a complimentary drink, setting the tone for an exceptional evening. 
+                The space captivates with its soaring ceilings, thoughtfully designed mood lighting, and lush greenery throughout. 
+                The carefully curated soundtrack completes the sophisticated yet inviting atmosphere that makes this establishment a standout in the global cocktail scene.
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Movies</h2>
+        <div class="favorite-item">
+            <span class="item-title">Dune: Part Two</span>
+            <span class="item-description">
+                Dune: Part Two delivers a visually stunning cinematic experience that truly shines in IMAX format. 
+                The film's masterful use of wide-angle shots showcases the breathtaking landscapes, making the most of the large-format presentation to immerse viewers in its world. 
+                The grand scale and visual artistry make it a standout theatrical experience of 2024.
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Products</h2>
+        <div class="favorite-item">
+            <span class="item-title">Cursor</span>
+            <span class="item-description">
+                A new AI-powered coding IDE that transforms the development experience. 
+                Cursor's intelligent features and lightning-fast responsiveness elevate productivity to unprecedented levels, making it stand head and shoulders above traditional code editors. 
+                Its seamless AI integration makes complex programming tasks feel effortless.
+            </span>
+        </div>
+    </div>
+
+
+    <div class="category">
+        <h2>Favorite Music Listened To</h2>
+
+        <div class="favorite-item">
+            <span class="item-title">Break My Love</span>
+            <span class="item-location">• Rüfüs Du Sol</span>
+            <span class="item-description">
+                A masterful evolution of Rüfüs Du Sol's signature sound, blending their distinctive electronic landscapes with nostalgic 80s undertones. 
+                The track demonstrates how artists can push their boundaries while staying true to their musical identity.
+            </span>
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3tqyv30P7pO53IAIUo8IeN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Netseweth Sifassan Nagh</span>
+            <span class="item-location">• Majid Soula</span>
+            <span class="item-description">
+                A funky, infectious track by Majid Soula discovered at NYC's Tigre lounge. 
+                Despite the language barrier, the song's irresistible groove transcends any need for lyrical understanding.
+            </span>
+
+            <div class="spotify-embed">
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/track/53OX7XBnbhhzNuuGEBauJx?utm_source=generator&theme=0" 
+                    width="100%" 
+                    height="152" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">i saw you</span>
+            <span class="item-location">• Fred Again...</span>
+            <span class="item-description">
+                A dreamlike electronic track that creates an atmosphere of pure longing, with production so ethereal it invites you to drift away in its emotional currents. 
+                The kind of song that wraps you in a beautiful melancholy you never want to leave.
+            </span>
+            <div class="spotify-embed">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3DzWFxyzsAVblVNndiU9CW?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Articles Read</h2>
+        <div class="favorite-item">
+            <span class="item-title">Vesuvius Challenge 2023 Grand Prize awarded</span>
+            <span class="item-description">
+                The 2023 Vesuvius Challenge united a global community of experts to achieve the seemingly impossible: reading ancient Roman scrolls carbonized by Mount Vesuvius's eruption in 79 AD. 
+                Using computer vision and machine learning, teams successfully revealed text from these fragile artifacts without unrolling them, unlocking knowledge hidden for two millennia.            
+                <br />
+                <a href="https://scrollprize.org/grandprize" target="_blank">Article Link</a>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        function toggleImage(imageId) {
+            const img = document.getElementById(imageId);
+            const btn = img.previousElementSibling;
+            if (img.classList.contains('show')) {
+                img.classList.remove('show');
+                btn.textContent = 'Show Image';
+            } else {
+                img.classList.add('show');
+                btn.textContent = 'Hide Image';
+            }
+        }
+    </script>
+</body>
+</html>
