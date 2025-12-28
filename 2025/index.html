@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Things of 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .category {
+            margin-bottom: 2rem;
+        }
+        .category h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .favorite-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .item-location {
+            color: #666;
+            font-style: italic;
+        }
+        .item-description {
+            display: block;
+            margin-top: 0.5rem;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        .image-toggle {
+            display: block;
+            background: #e0e0e0;
+            border: none;
+            padding: 4px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 0.5rem;
+        }
+        .image-toggle:hover {
+            background: #d0d0d0;
+        }
+        .hidden-image {
+            display: none;
+            max-width: 100%;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+        .hidden-image.show {
+            display: block;
+        }
+        .spotify-embed {
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .intro-section {
+            margin: 2rem 0 3rem;
+            padding: 1.5rem;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        .intro-section p {
+            margin: 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Things of 2025</h1>
+    <div class="intro-section">
+        <p>
+            Welcome to my curated collection of discoveries and experiences from 2025. While not everything featured here was 
+            created or opened this year, each entry represents something I personally experienced for the first time in 2025. 
+            These are the highlights that made my year special. 
+        </p>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Bars & Restaurants</h2>
+        <div class="favorite-item">
+            <span class="item-title">Ofício</span>
+            <span class="item-location">• Lisbon, Portugal</span>
+            <span class="item-description">
+                The service felt like you were at a friends house - it welcoming and very conversational. 
+                The wine list is deep and very reasonably priced. 
+                The tapas style menu varied from beef tartare with bone marrow to cod with roasted potato foam.
+                Each dish was a hit and was easily the best meal we had in Portugal (which says a lot given the number of Michelin star restaurants we visited).
+            </span>
+        </div>
+
+        <div class="favorite-item">
+            <span class="item-title">Red Frog Speakeasy</span>
+            <span class="item-location">• Lisbon, Portugal</span>
+            <span class="item-description">
+                We ordered 4 Negroni riffs and each one was a smash.
+                If it wasn't booked up weeks in advance, we would have gone back multiple times.
+            </span>
+        </div>
+
+        <div class="favorite-item">
+            <span class="item-title">Southern Junction</span>
+            <span class="item-location">• Buffalo, New York</span>
+            <span class="item-description">
+                Texas style BBQ with Indian fusion. Weird combo? Maybe. But both James Beard and I love it.
+                They don't mess with the meats. Zebra style brisket, pork shoulder, and ribs.
+                But the sides are where they get creative with the Indian fusion. Cardamom cornbread, Chammandhi Slaw, Brisket Biriyani...
+                Honestly, the Chammandhi Slaw was the best coleslaw I've ever had and should be in the next section...
+            </span>
+        </div>
+
+    </div>
+
+    <div class="category">
+        <h2>Favorite Food & Drink</h2>
+        <div class="favorite-item">
+            <span class="item-title">Khoa Soi</span>
+            <span class="item-location">• Thai Delish</span>
+            <span class="item-description">
+                The first time I had Khoa Soi was in Thailand. 
+                I've dreamt about it since then. 
+                A new Thai place near me started offering it, and I've been ordering it every couple of weeks since.
+            </span>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Pastel de Nata</span>
+            <span class="item-location">• Portugal</span>
+            <button class="image-toggle" onclick="toggleImage('pastel-image')">Show Image</button>
+            <img id="pastel-image" class="hidden-image" src="img/pastel_de_nata.jpg" alt="Pastel de Nata">
+            <span class="item-description">
+                Had them all over Portugal, multiple times a day.
+                Where have they been all my life?
+            </span>
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Unfiltered LBV Port</span>
+            <span class="item-description">
+                I discovered port this year, through various tastings around Porto.
+                I tried white, ruby, LBV, tawny, and vintage ports, of different styles and ages.
+                But I found unfiltered LBV to have the complexity and flavor profile I perfered, at a reasonable price.
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Experiences</h2>
+        <div class="favorite-item">
+            <span class="item-title">Seeing Puffins</span>
+            <span class="item-location">• Westman Islands, Iceland</span>
+            <button class="image-toggle" onclick="toggleImage('puffin-image')">Show Image</button>
+            <img id="puffin-image" class="hidden-image" src="img/puffins.jpg" alt="Puffins in Westman Islands">
+        </div>
+        <div class="favorite-item">
+            <span class="item-title">Crystal blue water</span>
+            <span class="item-location">• Nassau, Bahamas</span>
+            <button class="image-toggle" onclick="toggleImage('bahama-image')">Show Image</button>
+            <img id="bahama-image" class="hidden-image" src="img/bahama.jpg" alt="Crystal blue water in Nassau, Bahamas">
+        </div>
+
+    </div>
+
+    <div class="category">
+        <h2>Favorite TV Show</h2>
+        <div class="favorite-item">
+            <span class="item-title">Pluribus</span>
+            <span class="item-description">
+                A thought-provoking sci-fi TV show with deep philosophical themes left me thinking about it after each episode.
+                Easily the best TV show I've watched this year.
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Products</h2>
+        <div class="favorite-item">
+            <span class="item-title">Product Name</span>
+            <span class="item-description">
+                Why this product is great...
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Music Listened To</h2>
+        <div class="favorite-item">
+            <span class="item-title">Song Title</span>
+            <span class="item-location">• Artist</span>
+            <span class="item-description">
+                Thoughts on the track...
+            </span>
+            <div class="spotify-embed">
+                <!-- Replace src with Spotify embed URL -->
+                <iframe style="border-radius:12px" src="about:blank" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Favorite Articles Read</h2>
+        <div class="favorite-item">
+            <span class="item-title">Article Title</span>
+            <span class="item-description">
+                Summary or key takeaway...
+                <br />
+                <a href="#" target="_blank">Article Link</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Cool Projects I've Seen</h2>
+        <div class="favorite-item">
+            <span class="item-title">Project Name</span>
+            <span class="item-description">
+                Why this project is cool...
+                <br />
+                <a href="#" target="_blank">Project Link</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Technologies I'm Excited About</h2>
+        <div class="favorite-item">
+            <span class="item-title">Technology Name</span>
+            <span class="item-description">
+                Why this technology is exciting...
+                <br />
+                <a href="#" target="_blank">Technology Link</a>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        function toggleImage(imageId) {
+            const img = document.getElementById(imageId);
+            const btn = img.previousElementSibling;
+            if (img.classList.contains('show')) {
+                img.classList.remove('show');
+                btn.textContent = 'Show Image';
+            } else {
+                img.classList.add('show');
+                btn.textContent = 'Hide Image';
+            }
+        }
+    </script>
+</body>
+</html>
